@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PX Scenery Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <style>
+        #map{
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+<script>
+    var map = L.map('map').setView([48, 25], 3);
+
+
+// OSM Layer
+var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+osm.addTo(map);
+
+// Marker
+{
+
+// Iran
+{
+var singleMarker = L.marker([35.2441, 47.0084]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OICS | Sanandaj Airport v1.2</p><img src="https://persianxplane.ir/uploads/cc3046e4af324318bc0fb27c61981304.jpg" alt="OICS" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OICS_Sanandaj_v1.2.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([34.3485, 47.1562]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OICC | Kermanshah International Airport v1.1</p><img src="https://persianxplane.ir/uploads/65886a6e7f404d9fa202cd0271c6b550.jpg" alt="OICC" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OICC_Kermanshah_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([35.6894, 51.3157]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OIII | Mehrabad International Airport v1.1</p><img src="https://persianxplane.ir/uploads/a1763f937fee41318d49f03ad9a40e40.jpg" alt="OIII" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OIII_Mehrabad_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([25.8761, 55.0337]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OIBA | Abu Musa Airport v1.1</p><img src="https://persianxplane.ir/uploads/88d6850ce0ad455ab18ebc4e10baa27c.jpg" alt="OIBA" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OIBA_Abumusa_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([37.3251, 49.6105]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OIGG | Rasht Airport v1</p><img src="https://persianxplane.ir/uploads/4ab334af9c4e4948a6dd362aaba4bdc7.jpg" alt="OIGG" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OIGG_Rasht_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([30.2706, 56.9527]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OIKK | Kerman International Airport v1.2</p><img src="https://persianxplane.ir/uploads/6835e9487c8d435087cf98c47868ced6.jpg" alt="OIKK" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OIKK_Kerman_v1.2.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([34.1378, 49.8457]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OIHR | Arak Airport v1.1</p><img src="https://persianxplane.ir/uploads/9af3df8a29fb4937a392d1d66a638237.jpg" alt="OIHR" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OIHR_Arak_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([38.4263, 44.9743]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OITK | Khoy Airport v1</p><img src="https://persianxplane.ir/uploads/f59dd0f00ebd4acb98be9b38f549f631.jpg" alt="OITK" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OITK_Khoy_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([36.9091, 50.6829]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OINR | Ramsar International Airport v1.1</p><img src="https://persianxplane.ir/uploads/7828a64016b94fe7a4a5cf5abe46466a.jpg" alt="OINR" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OINR_Ramsar_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([39.1919, 44.925]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OITU | Maku International Airport v1.1</p><img src="https://persianxplane.ir/uploads/d2d048f47fe94ad290899219d826b937.jpg" alt="OITU" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OITU_Maku_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([35.7749, 50.8283]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>OIIP | Payam International Airport v1</p><img src="https://persianxplane.ir/uploads/1751b429572842339ca2717314ab02ec.jpg" alt="OIIP" width="300"><a href="https://px-iranian-airports.s3.ir-thr-at1.arvanstorage.com/OIIP_Payam_v1.0.rar">Download</a>')
+popup.addTo(map);
+}
+
+// World
+{
+
+// Germany
+{
+var singleMarker = L.marker([51.1329, 13.768]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDDC | Dresden International Airport v1</p><img src="https://persianxplane.ir/uploads/3886bc067b3a4af6ae29a462e5dec290.jpg" alt="EDDC" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDDC_Dresden_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([53.6328, 9.9941]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDDH | Hamburg International Airport v1</p><img src="https://persianxplane.ir/uploads/5f36e2b38e4c4de9bf1981a2bf2c3f90.jpg" alt="EDDH" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDDH_Hamburg_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([51.2831, 6.765]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDDL | Dusseldorf International Airport v1</p><img src="https://persianxplane.ir/uploads/6d73eb5014bc4cff9c5ee3273b106497.jpg" alt="EDDL" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDDL_Dusselforf_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([48.6901, 9.2116]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDDS | Stuttgart International Airport</p><img src="https://persianxplane.ir/uploads/f83ac88d3f014b628151dc742ccc589e.jpg" alt="EDDS" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDDS_Stuttgart.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([52.5555, 13.2927]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDDT | Berlin-Tegel International Airport</p><img src="https://persianxplane.ir/uploads/0cf359379901434e97f278e8722cf99b.jpg" alt="EDDT" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDDT_Berlin_Tegel.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([49.9614, 8.6423]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDFE | Frankfurt-Egelsbach Airport</p><img src="https://persianxplane.ir/uploads/6657853f33944efda6af2b9717ac8194.jpg" alt="EDFE" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDFE_Egelsbach.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([51.5166, 7.6106]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDLW | Dortmund International Airport</p><img src="https://persianxplane.ir/uploads/be1b097ceae94ee58eaecfb38fe515b5.jpg" alt="EDLW" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDLW_Dortmund.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([47.6708, 9.5109]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDNY | Friedrichshafen International Airport v1</p><img src="https://persianxplane.ir/uploads/d53fa2b6ff99423f86291a234bf7d50e.jpg" alt="EDNY" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDNY_Friedrichshafen_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([54.18605, 7.91467]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EDXH | Heligoland Airport</p><img src="https://persianxplane.ir/uploads/ca5f06b64693400983f297317cd7ab9c.jpg" alt="EDXH" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EDXH_Helgoland.rar">Download</a>')
+popup.addTo(map);
+}
+
+// France
+{
+var singleMarker = L.marker([44.8287,-0.7128]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LFBD | Bordeaux International Airport v0.7</p><img src="https://persianxplane.ir/uploads/f86a6e3af9ab40b0bf8da34d5e13df36.jpg" alt="LFBD" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LFBD_Bordeaux_v0.7.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([48.9795,6.2452]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LFJL | Metz-Nancy-Lorraine Airport</p><img src="https://persianxplane.ir/uploads/d0e5ae924e214ceaa7da66d105940f63.jpg" alt="LFJL" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LFJL_MetzNancy_Lorraine.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([42.5285,8.7926]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LFKC | Calvi Sainte-Catherine Airport v1</p><img src="https://persianxplane.ir/uploads/187c08ca08964c78b3d5f535a67e8952.jpg" alt="LFKC" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LFKC_Calvi_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([45.7228,5.0881]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LFLL | Lyon-Saint Expurey International Airport</p><img src="https://persianxplane.ir/uploads/34d08cc5f799459fb6bddf4602eb3069.jpg" alt="LFLL" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LFLL_Lyon.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([43.6599,7.2137]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LFMN | Nice Cote dAzur International Airport v2.1</p><img src="https://persianxplane.ir/uploads/5f71db1db1904f9786d3c85cd6c04732.jpg" alt="LFMN" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LFMN_NiceCotedAzur_v2.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([43.5771,3.9586]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LFMT | Montpellier-Mediterranee Airport v1</p><img src="https://persianxplane.ir/uploads/775406d3f4924bcfae2a54018f96fae3.jpg" alt="LFMT" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LFMT_MontpellierMediterranee+_v1.0.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Spain
+{
+var singleMarker = L.marker([28.0450,-16.5770]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>GCTS | Tenerife South International Airport v3</p><img src="https://persianxplane.ir/uploads/fe9cdf1819af433ead27e084b133f0ea.jpg" alt="GCTS" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/GCTS_Tenerife_v3.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([28.4856,-16.3460]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>GCXO | Tenerife North International Airport v3</p><img src="https://persianxplane.ir/uploads/81223d45f87d434881a4e35034b3ad10.jpg" alt="GCXO" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/GCXO_Tenerife_+v3.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([41.8207,-2.4743]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LEGY | Soria-Garray Airport v1</p><img src="https://persianxplane.ir/uploads/87211c1c18e045bda7fd390b527165a6.jpg" alt="LEGY" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LEGY_SoriaGarray_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([39.8653,4.2228]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LEMH | Menorca International Airport v1.1</p><img src="https://persianxplane.ir/uploads/8739a8f964e144ed9add98c69821ff28.jpg" alt="LEMH" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LEMH_GarrochoPerez_v.1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([39.86523,4.25456]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LESL | Sant Lluis Airport v1.1</p><img src="https://persianxplane.ir/uploads/8c1f04f2179d44b4847228e5d21a36f7.jpg" alt="LESL" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LESL_GarrochoPerez_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([39.4893,-0.4799]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LEVC | Valencia International Airport v1.1</p><img src="https://persianxplane.ir/uploads/6d1c882e35ce4858bd8daa0ccf99fe72.jpg" alt="LEVC" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LEVC_Valencia_v1.1.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Austria
+{
+var singleMarker = L.marker([46.9937,15.4424]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LOWG | Graz International Airport</p><img src="https://persianxplane.ir/uploads/56b37b89f1ba4ad0a979486e1bc55975.jpg" alt="LOWG" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LOWG_GRAZ.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([47.2601,11.3444]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LOWI | Innsbruck International Airport v2</p><img src="https://persianxplane.ir/uploads/3e073365825144a6acf293cf0d8679f6.jpg" alt="LOWI" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LOWI_Innsbruck_v2.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([48.2331,14.1885]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LOWL | Linz International Airport v1</p><img src="https://persianxplane.ir/uploads/d23302332b9a430099aeb3e27c3d808f.jpg" alt="LOWL" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LOWL_Linz_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([47.7928,13.0027]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LOWS | Salzburg Airport v1</p><img src="https://persianxplane.ir/uploads/89cb9ed43a984fa2bda590dcf21da49d.jpg" alt="LOWS" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LOWS_Salzburg_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([48.1174,16.5646]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LOWW | Vienna International Airport v1.1</p><img src="https://persianxplane.ir/uploads/f252b40c3b1f43be901d9b7386d4e772.jpg" alt="LOWW" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LOWW_Vienna_v1.1.rar">Download</a>')
+popup.addTo(map);
+}
+
+// England
+{
+var singleMarker = L.marker([53.4718,-2.3887]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EGCB | Barton Airport</p><img src="https://persianxplane.ir/uploads/2de7f12449a14106a26883e85f712301.jpg" alt="EGCB" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EGCB_Barton_Manchester.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([51.3980,-3.3476]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EGFF | Cardiff Airport</p><img src="https://persianxplane.ir/uploads/2fe606620e814115bd1cfa901a4366f5.jpg" alt="EGFF" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EGFF_Cardiff.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([50.8600,-0.7600]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EGHR | Goodwood Airport</p><img src="https://persianxplane.ir/uploads/5a91e133c4ad48babada9681304089cb.jpg" alt="EGHR" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EGHR_Goodwood.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([51.1539,-0.1814]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EGKK | Gatwick International Airport v1.1</p><img src="https://persianxplane.ir/uploads/12de8ec3cf3f4b3d89ad54f2ff7675f7.jpg" alt="EGKK" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EGKK_Gatwick_v1.1.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([51.8863,0.2445]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EGSS | London Stansted International Airport</p><img src="https://persianxplane.ir/uploads/9232dc08c7f44732892aa47deb37bd6b.jpg" alt="EGSS" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EGSS_London_Stansted.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Romania
+{
+var singleMarker = L.marker([46.7864,23.6859]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LRCL | Avaram Lancu Cluj International Airport v1</p><img src="https://persianxplane.ir/uploads/e722d4f2205e4ad0acdc6131d6e71e94.jpg" alt="LRCL" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LRCL_Cluj_Napoca_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([44.5718,26.0975]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LROP | Henri Coanda International Airport v2</p><img src="https://persianxplane.ir/uploads/651240180e584279a0fafafe9afd8934.jpg" alt="LROP" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LROP_HenriCoanda_v2.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([45.7862,24.0887]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LRSB | Sibiu International Airport</p><img src="https://persianxplane.ir/uploads/a11bd67e79004c01b9da0e12538415bd.jpg" alt="LRSB" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LRSB_Aeroportul_International_Sibiu.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([45.8112,21.3299]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LRTR | Timisoara International Airport</p><img src="https://persianxplane.ir/uploads/7e8bcdfc1b2747b58d6e3454da01b23b.jpg" alt="LRTR" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LRTR_Timisoara_Traian_Vuia.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Denmark
+{
+var singleMarker = L.marker([55.6167,12.6463]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EKCH | Copenhagen International Airport</p><img src="https://persianxplane.ir/uploads/921500997d4942d3b707c8fef50bf4c3.jpg" alt="EKCH" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EKCH_Kopenhagen.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([57.0950,9.8540]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EKYT | Aalborg Airport</p><img src="https://persianxplane.ir/uploads/1f9e385a74884fa5a20876cbe4ffebac.jpg" alt="EKYT" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EKYT_Aalborg.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Finland
+{
+var singleMarker = L.marker([60.2518,25.0436]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EFHF | Helsinki-Malmi Airport v1.4</p><img src="https://persianxplane.ir/uploads/5d825e002c0e4b73b8fd76e403b8b0e4.jpg" alt="EFHF" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EFHF_HelsinkiMalmi_v1.4.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([66.5635,25.8299]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EFRO | Rovaniemi Airport v120161206</p><img src="https://persianxplane.ir/uploads/60e029018fc548d2b8384389a85af957.jpg" alt="EFRO" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EFRO_Rovaniemi_v120161209.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Switzerland
+{
+var singleMarker = L.marker([46.2363,6.1075]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LSGG | Geneva International Airport v1</p><img src="https://persianxplane.ir/uploads/675397e2b56d4a1ea93de4d763171519.jpg" alt="LSGG" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LSGG_Geneva_v1.0.rar">Download</a>')
+popup.addTo(map);
+
+var singleMarker = L.marker([46.0031,8.9097]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LSZA | Lugano Airport</p><img src="https://persianxplane.ir/uploads/f6c586a1daf14a4b9f0bb4e5c05d798b.jpg" alt="LSZA" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LSZA_Lugano.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Bulgaria
+{
+var singleMarker = L.marker([43.2331,27.8239]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LBWN | Varna International Airport v1.1</p><img src="https://persianxplane.ir/uploads/01b999affcbc4e92afc7337930bedca9.jpg" alt="LBWN" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LBWN_Varna_v1.1.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Croatia
+{
+var singleMarker = L.marker([42.5623,18.2647]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LDDU | Dubrovnik International Airport</p><img src="https://persianxplane.ir/uploads/254a8033a9bf4a8aa982aae0eb97e489.jpg" alt="LDDU" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LDDU_Dubrovnik.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Czechia
+{
+var singleMarker = L.marker([50.1065,14.2652]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LKPR | Vaclav Havel International Airport v2.2.2</p><img src="https://persianxplane.ir/uploads/3b22cf2e70cb48b8a536270c70406155.jpg" alt="LKPR" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LKPR_Prague_v2.2.2.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Greece
+{
+var singleMarker = L.marker([38.3430,26.1405]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LGHI | Chios Island International Airport v1</p><img src="https://persianxplane.ir/uploads/0491d8fc37204669b898198d20065a6f.jpg" alt="LGHI" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LGHI_Chios_v1.0.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Iceland
+{
+var singleMarker = L.marker([63.9843,-22.6136]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>BIKF | Keflavik International Airport</p><img src="https://persianxplane.ir/uploads/ad109f541d324543a5935ee3978afd9b.jpg" alt="BIKF" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/BIKF_Keflavik.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Latvia
+{
+var singleMarker = L.marker([56.9217,23.9727]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EVRA | Riga International Airport</p><img src="https://persianxplane.ir/uploads/120dc89be5f848a5af0f3eb6239ec0e1.jpg" alt="EVRA" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EVRA_Riga_v1.1.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Luxembourg
+{
+var singleMarker = L.marker([49.6283,6.2126]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>ELLX | Luxembourg International Airport v2</p><img src="https://persianxplane.ir/uploads/1ffee8c6df964bec9e9747bc2b0f75b6.jpg" alt="ELLX" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/ELLX_Luxembourg_v2.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Malta
+{
+var singleMarker = L.marker([35.8473,14.4917]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LMML | Malta International Airport</p><img src="https://persianxplane.ir/uploads/d52bc0fe57c640d592492a4d6992dc19.jpg" alt="LMML" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LMML_malta.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Moldova
+{
+var singleMarker = L.marker([46.9313,28.9324]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LUKK | Chisinau International Airport</p><img src="https://persianxplane.ir/uploads/f5ebf7724ea74f7b9d8e57a214558902.jpg" alt="LUKK" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LUKK_Chisinau.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Netherlands
+{
+var singleMarker = L.marker([52.3076,4.7585]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>EHAM | Amsterdam International Airport</p><img src="https://persianxplane.ir/uploads/a3073555d864479a861cd2a96ba478d8.jpg" alt="EHAM" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/EHAM_Amsterdam.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Norway
+{
+var singleMarker = L.marker([60.8186,11.0674]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>ENHA | Hamar Airport</p><img src="https://persianxplane.ir/uploads/ee28a6215f3c4e438c9e055f27709ae4.jpg" alt="ENHA" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/ENHA_A_Hamar_Flyplass.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Russia
+{
+var singleMarker = L.marker([55.9738,37.4139]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>UUEE | Moscow Sheremetyevo International Airport</p><img src="https://persianxplane.ir/uploads/2b02d3b53ed04296b00e27365db94f36.jpg" alt="UUEE" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/UUEE_Moscow_Sheremetyevo.rar">Download</a>')
+popup.addTo(map);
+}
+
+// Turkey
+{
+var singleMarker = L.marker([36.9004,30.8017]);
+singleMarker.addTo(map);
+var popup = singleMarker.bindPopup('<p>LTAI | Antalya International Airport v1</p><img src="https://persianxplane.ir/uploads/9af30f77fdb44cf485c90f3b4ce512fe.jpg" alt="LTAI" width="300"><a href="https://px-world-airports.s3.ir-thr-at1.arvanstorage.com/LTAI_Antalya_v1.0.rar">Download</a>')
+popup.addTo(map);
+}
+}
+}
+
+</script>
